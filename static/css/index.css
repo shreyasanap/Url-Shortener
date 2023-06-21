@@ -1,0 +1,40 @@
+*{
+    font-family: sans-serif;
+}
+
+
+form{
+    width: 600px;
+    padding: 2rem;
+    border:1px solid #ddd;
+    margin: 2% auto;
+}
+label{
+    margin-top: 8px;
+    display: block;
+    margin-bottom: 1rem;
+    font-size: large;
+}
+input{
+  width:90%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    
+}
+button{
+    width: 95%;
+    background-color: dodgerblue;
+    color: #fff;
+    font-size: large;
+    border: #000;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+h2 {
+    margin-top: 100px;
+    text-align: center; 
+    color: #000; /* set the color as needed */
+    font-size: 24px; /* adjust the font size as desired */
+}
