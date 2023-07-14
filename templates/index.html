@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL_SHORTENER APP</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/index.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='css/www.ico') }}" type=""/>
 </head>
 <body>
     <h2>Create Your Short Link</h2>
-   
-    <form action="{{url_for('index')}}" method="post">
+    <form action="{{ url_for('index') }}" method="post">
         <label>Enter Short Name</label>
-        <input type="text" name="name" placeholder="Max 20 characters " maxlength="20"/>
-        <label >Enter URL</label>
-        <input type="text" name="url" placeholder="Enter the URL" maxlength="200">
-        <button>
-            Submit
-          </button>
+        <input type="text" name="name" placeholder="Max 20 characters" maxlength="20" />
+        <label class="url">Enter URL</label>
+        <input type="text" name="url" placeholder="Enter the URL" maxlength="200" />
+        <button type="submit">Submit</button>
+        {% if msg %}
+            <p style="color:red">{{ msg }}</p>
+        {% endif %}
     </form>
 </body>
 </html>

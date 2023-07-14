@@ -1,28 +1,37 @@
-*{
+* {
     font-family: sans-serif;
 }
 
 
-form{
+form {
     width: 600px;
     padding: 2rem;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     margin: 2% auto;
 }
-label{
+
+label {
     margin-top: 8px;
     display: block;
+    font-weight: 600;
     margin-bottom: 1rem;
     font-size: large;
 }
-input{
-  width:90%;
+
+.url {
+    margin-top: 15px;
+}
+
+input {
+    font-weight: 400;
+    width: 90%;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
-    
+
 }
-button{
+
+button {
     width: 95%;
     background-color: dodgerblue;
     color: #fff;
@@ -32,9 +41,10 @@ button{
     padding: 1rem;
     border-radius: 8px;
 }
+
 h2 {
     margin-top: 100px;
-    text-align: center; 
-    color: #000; /* set the color as needed */
-    font-size: 24px; /* adjust the font size as desired */
+    text-align: center;
+    color: #000;
+    font-size: 24px;
 }
